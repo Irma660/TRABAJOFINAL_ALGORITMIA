@@ -15,14 +15,17 @@ public class EjmATde_pre_pedido {
         List<producto> recomendaciones = new ArrayList<>();
         recomendaciones.add(new producto("café"));
         recomendaciones.add(new producto("azúcar"));
+        recomendaciones.add(new producto("harina"));
+        recomendaciones.add(new producto("arroz"));
         return recomendaciones;
     }
     public static void main(String[] args){ 
         String productoIngresado;
         List<producto> productosComprados = new ArrayList<>();
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Por favor ingrese sus productos comprados ");
-        System.out.println("Ingrese 'SALIR' para finalizar");
+        System.out.println("======BIENVENIDO A LA TIENDA ANITA========");
+        System.out.println("Por favor ingrese sus productos comprados.");
+        System.out.println("------Ingrese 'SALIR' para finalizar------");
         /*Crearemos un bucle con la siguiente condición: Después que el cliente ingrese
         sus productos comprados, pondrá la opción de SALIR o salir, y automáticamente
         le saldrá la lista de los productos recomendados, cerrando el sistema */
@@ -35,7 +38,7 @@ public class EjmATde_pre_pedido {
         }//fin de bucle
         //llamados al metodo recomendaciones para obtener los productos relacionados
         List<producto> recomendaciones = recomendacion(productosComprados);
-        System.out.println("PRODUCTOS RECOMENDADOS: ");
+        System.out.println("--------PRODUCTOS RECOMENDADOS------------");
         for (producto p : recomendaciones){
             System.out.println(p.nombre); 
         }
