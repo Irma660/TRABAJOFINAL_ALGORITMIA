@@ -12,6 +12,9 @@ public class EjmAT_post_pedido {
       almacenes.add(new Almacen("Almacen Huallayco", "Jr. Huallayco", 8));
       almacenes.add(new Almacen("Almacen Portales", "Jr. Los cedros", 15));
       almacenes.add(new Almacen("Almacen Huánuco", "Jr. huánuco", 10));
+      //ingresar ubicación del cliente
+        System.out.println("INGRESE SU UBICACIÓN: ");
+        String ubicaciónC = leer.nextLine();
       
       //CREANDO CLASE ALMACEN
       class Almacen {
