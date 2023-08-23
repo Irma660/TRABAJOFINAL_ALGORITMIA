@@ -32,6 +32,12 @@ public class EjmATde_pre_pedido {
                 break;
             }
             productosComprados.add(new producto(productoIngresado));
+        }//fin de bucle
+        //llamados al metodo recomendaciones para obtener los productos relacionados
+        List<producto> recomendaciones = recomendacion(productosComprados);
+        System.out.println("PRODUCTOS RECOMENDADOS: ");
+        for (producto p : recomendaciones){
+            System.out.println(p.nombre); 
         }
     }
     
