@@ -23,8 +23,16 @@ public class EjmATde_pre_pedido {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Por favor ingrese sus productos comprados ");
         System.out.println("Ingrese 'SALIR' para finalizar");
-        
-        
+        /*Crearemos un bucle con la siguiente condición: Después que el cliente ingrese
+        sus productos comprados, pondrá la opción de SALIR o salir, y automáticamente
+        le saldrá la lista de los productos recomendados, cerrando el sistema */
+        while (true){
+            productoIngresado = entrada.nextLine();
+            if (productoIngresado.equalsIgnoreCase("salir")){
+                break;
+            }
+            productosComprados.add(new producto(productoIngresado));
+        }
     }
     
 }
