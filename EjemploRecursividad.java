@@ -9,6 +9,9 @@ public class EjemploRecursividad {
         }
 }
     public static void main(String[] args) { 
+        int n = 10;
+        int r = sumaN(n);
+        System.out.println("La suma de los primeros " + n + " números naturales es = " +r);
     }
     
 }
