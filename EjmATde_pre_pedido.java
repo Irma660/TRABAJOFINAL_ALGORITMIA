@@ -18,9 +18,13 @@ public class EjmATde_pre_pedido {
         return recomendaciones;
     }
     public static void main(String[] args){ 
+        String productoIngresado;
         List<producto> productosComprados = new ArrayList<>();
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Por favor ingrese sus productos comprados: ");
+        System.out.println("Por favor ingrese sus productos comprados ");
+        System.out.println("Ingrese 'SALIR' para finalizar");
+        
+        
     }
     
 }
