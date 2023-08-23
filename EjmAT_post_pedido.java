@@ -7,6 +7,12 @@ public class EjmAT_post_pedido {
     public static void main(String[] args) {
       //EJERCICIO DE ASIGNACIÓN DE PEDIDOS
       Scanner leer = new Scanner(System.in);
+      //crearemos lista de los almacenes mas cercanos
+      List<Almacen> almacenes = new ArrayList<>();
+      almacenes.add(new Almacen("Almacen Huallayco", "Jr. Huallayco", 8));
+      almacenes.add(new Almacen("Almacen Portales", "Jr. Los cedros", 15));
+      almacenes.add(new Almacen("Almacen Huánuco", "Jr. huánuco", 10));
+      
       //CREANDO CLASE ALMACEN
       class Almacen {
           private String nombre;
@@ -22,7 +28,4 @@ public class EjmAT_post_pedido {
               return nombre;
           }
       }
-      
-    }
-    
-}
+    }}
