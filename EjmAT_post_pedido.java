@@ -15,14 +15,19 @@ public class EjmAT_post_pedido {
       //ingresar ubicación del cliente
         System.out.println("INGRESE SU UBICACIÓN: ");
         String ubicaciónC = leer.nextLine();
-      
+      //algor
+      //Algortimo para encontrar almacen más cercano 
+      Almacen MasCercano = encontrar(ubicaciónC,almacenes);
+      public static Almacen encontrar (String ubicaciónC, List<Almacen> almacenes){
+          return almacenes.get(0);
+      }
       //CREANDO CLASE ALMACEN
       class Almacen {
           private String nombre;
           private String dirección;
           //la distancia es real
           private int distancia;
-          public Almacen(String nombre, String direccion,int capacidad){
+          public Almacen(String nombre, String direccion,int distancia){
               this.nombre = nombre;
               this.dirección = dirección;
               this.distancia = distancia;
@@ -31,4 +36,4 @@ public class EjmAT_post_pedido {
               return nombre;
           }
       }
-    }}
+    }
