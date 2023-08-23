@@ -20,6 +20,7 @@ public class EjmATde_pre_pedido {
     public static void main(String[] args){ 
         List<producto> productosComprados = new ArrayList<>();
         Scanner entrada = new Scanner(System.in);
+        System.out.println("Por favor ingrese sus productos comprados: ");
     }
     
 }
