@@ -8,16 +8,18 @@ public class Algoritmo1 {
        Scanner entrada = new Scanner(System.in);
        
        //solicitar al usuario ingresar un número entero
+       while(true){
         System.out.println("=== CALCULAR FACTORIAL ===");
         System.out.println("INGRESE UN NÚMERO ENTERO: ");
         número = entrada.nextInt();
        //verificando si es negativo
-       do{
+       
        if (número < 0){
            System.out.println("No se puede calcular números negativos");
+       }else {
+           break; //Salir del bucle si el número es entero positivo
        }
-       }while (número < 0);
-       
+       }
            //calculando la factorial
            long factorial = 1;
            for (int i = 1; i <= número; i++ ) {
