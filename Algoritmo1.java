@@ -33,6 +33,7 @@ public class Algoritmo1 {
                 }
                 //salida, de mostrar resultado
                 System.out.println("La factorial de "+número+ "es = "+factorial);
+                entrada.close();
             }
          }
     
