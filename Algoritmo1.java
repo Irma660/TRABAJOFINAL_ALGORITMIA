@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Algoritmo1 {
     public static void main(String[] args) {
        /*EJEMPLO DE ALGORITMO 01*/
-       int número;
+       int número; 
        Scanner entrada = new Scanner(System.in);
        
        //solicitar al usuario ingresar un número entero
@@ -12,9 +12,12 @@ public class Algoritmo1 {
         System.out.println("INGRESE UN NÚMERO ENTERO: ");
         número = entrada.nextInt();
        //verificando si es negativo
+       do{
        if (número < 0){
            System.out.println("No se puede calcular números negativos");
-       } else {
+       }
+       }while (número < 0);
+       
            //calculando la factorial
            long factorial = 1;
            for (int i = 1; i <= número; i++ ) {
@@ -25,4 +28,4 @@ public class Algoritmo1 {
        }
     }
     
-}
+
