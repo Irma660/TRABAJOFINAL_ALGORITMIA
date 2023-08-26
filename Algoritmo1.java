@@ -20,6 +20,8 @@ public class Algoritmo1 {
            for (int i = 1; i <= número; i++ ) {
                factorial *=i;
            }
+           //salida, de mostrar resultado
+           System.out.println("La factorial de "+número+ "es = "+factorial);
        }
     }
     
