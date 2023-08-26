@@ -11,6 +11,12 @@ public class Algoritmo2 {
             System.out.println("INGRESAR PUNTACIÓN DEL ESTUDIANTE: ");
             if (entrada.hasNextDouble()){
                 puntaje = entrada.nextDouble();
+                if(puntaje >= 0 && puntaje <= 20 ){
+                    break;
+                }else {
+                    System.out.println("Puntaje fuera de rango");
+                    System.out.println("SOLO INGRESAR PUNTAJE DE (0-20)");
+                }
                 break;
             }else {
                 System.out.println("Puntuación no válida");
