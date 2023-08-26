@@ -10,5 +10,14 @@ public class Algoritmo3 {
         System.out.println("INGRESAR UN NÚMERO: ");
         num = entrada.nextDouble();
         
+        //verificando
+        if (num > 0){
+            System.out.println("EL NÚMERO " +num+ " ES UN NÚMERO POSITIVO");
+        }else if (num < 0 ){
+            System.out.println("EL NÚMERO " +num+ " ES UN NÚMERO NEGATIVO");
+        } else {
+            System.out.println("EL NÚMERO ES CERO");
+        }
+        
     }  
 }
