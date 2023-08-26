@@ -14,6 +14,12 @@ public class Algoritmo1 {
        //verificando si es negativo
        if (número < 0){
            System.out.println("No se puede calcular números negativos");
+       } else {
+           //calculando la factorial
+           long factorial = 1;
+           for (int i = 1; i <= número; i++ ) {
+               factorial *=i;
+           }
        }
     }
     
