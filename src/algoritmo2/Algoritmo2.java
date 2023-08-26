@@ -17,10 +17,10 @@ public class Algoritmo2 {
                     System.out.println("Puntaje fuera de rango");
                     System.out.println("SOLO INGRESAR PUNTAJE DE (0-20)");
                 }
-                break;
             }else {
                 System.out.println("Puntuación no válida");
                 System.out.println("VUELVA A INGRESAR PUNTAJE");
+                entrada.nextLine(); //para limpiar entrada
             }
             } while(true);
             //evaluación
