@@ -9,15 +9,17 @@ public class Algoritmo2 {
         do{
             System.out.println("======= EVALUACIÓN DE EXAMEN ======");
             System.out.println("INGRESAR PUNTACIÓN DEL ESTUDIANTE: ");
-            if (entrada.hasNextDouble()){
-                puntaje = entrada.nextDouble();
+            puntaje = entrada.nextDouble();
+            String leer = entrada.next();
+            try {
+                puntaje = Double.parseDouble(leer);
                 if(puntaje >= 0 && puntaje <= 20 ){
                     break;
                 }else {
                     System.out.println("Puntaje fuera de rango");
                     System.out.println("SOLO INGRESAR PUNTAJE DE (0-20)");
                 }
-            }else {
+            }catch (NumberFormatException e) {
                 System.out.println("Puntuación no válida");
                 System.out.println("VUELVA A INGRESAR PUNTAJE");
                 entrada.nextLine(); //para limpiar entrada
