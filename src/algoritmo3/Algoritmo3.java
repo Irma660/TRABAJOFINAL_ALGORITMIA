@@ -6,6 +6,9 @@ public class Algoritmo3 {
         //algoritmo de verificar si el número es positivo o negativo
         double num;
         Scanner entrada = new Scanner(System.in);
+        //ingresar número
+        System.out.println("INGRESAR UN NÚMERO: ");
+        num = entrada.nextDouble();
         
     }  
 }
