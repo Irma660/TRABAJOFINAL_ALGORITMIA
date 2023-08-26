@@ -11,6 +11,10 @@ public class Algoritmo1 {
         System.out.println("=== CALCULAR FACTORIAL ===");
         System.out.println("INGRESE UN NÚMERO ENTERO: ");
         número = entrada.nextInt();
+       //verificando si es negativo
+       if (número < 0){
+           System.out.println("No se puede calcular números negativos");
+       }
     }
     
 }
