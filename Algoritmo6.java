@@ -18,6 +18,17 @@ public class Algoritmo6 {
            System.out.println("        ¿Tienes paraguas?          ");
            System.out.println("-------> SI/NO          -------    ");
            String paraguas = scanner.next().toLowerCase();
+            switch (paraguas){
+                case "si":
+                    System.out.println("Lleva el paraguas contigo");
+                    break;
+                case "no":
+                    System.out.println("No es necesario");
+                    break;
+                default:
+                    System.out.println("RESPUESTA NO VÁLIDA");
+                    break;
+            }
         }
     }    
 }
