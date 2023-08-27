@@ -4,7 +4,8 @@ import javax.swing.JOptionPane;
 public class Algoritmo4 {
     public static void main(String[] args) {
         //ejercicio contador de letras a con joptionPane
-        
+        boolean validacion = false;
+        while (!validacion){
         String frase = JOptionPane.showInputDialog("INGRESAR FRASE");
         int contador = 0;
         for (int i = 0; i < frase.length(); i++) {
@@ -15,8 +16,15 @@ public class Algoritmo4 {
             }
             }else {
                 JOptionPane.showConfirmDialog(null, "ERROR. INGRESÓ CARACTERES NO VÁLIDOS");
+                contador = 0;
+                break; //sale de bucle
             }
-        }
+        } 
+        if (contador > 0 ){
+            validacion = true;
         JOptionPane.showConfirmDialog(null, "La frase \"" + frase + "\" contiene " + contador + " letras 'a'.");
-    }  
+    } else {
+            validacion = false; 
+        }
+    }} 
 }
