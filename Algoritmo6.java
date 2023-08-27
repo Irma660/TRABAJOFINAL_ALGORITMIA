@@ -38,5 +38,6 @@ public class Algoritmo6 {
                System.out.println("RESPUESTA NO VÁLIDA");
                break;
         }
+        scanner.close();
     }    
 }
