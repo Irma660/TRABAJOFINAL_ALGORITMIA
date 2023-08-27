@@ -27,6 +27,6 @@ public class Algoritmo5 {
                  System.out.println("----¡NO PUEDES CONDUCIR!----");
                  System.out.println("=====ERES MENOR DE EDAD=====");
          }
-        
+        leer.close();
     }
 }
