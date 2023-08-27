@@ -12,5 +12,6 @@ public class Algoritmo4 {
             contador++;
         }
         }
+        JOptionPane.showConfirmDialog(null, "La frase \"" + frase + "\" contiene " + contador + " letras 'a'.");
     }  
 }
