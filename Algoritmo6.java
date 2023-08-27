@@ -29,6 +29,14 @@ public class Algoritmo6 {
                     System.out.println("RESPUESTA NO VÁLIDA");
                     break;
             }
+            //de pregunta: esta lloviendo?
+                    break;
+           case "no":
+               System.out.println("No lleves el paraguas, no está lloviendo");
+               break;
+           default:
+               System.out.println("RESPUESTA NO VÁLIDA");
+               break;
         }
     }    
 }
