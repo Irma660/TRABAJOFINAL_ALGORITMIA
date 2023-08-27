@@ -16,6 +16,16 @@ public class Algoritmo5 {
              System.out.println("---->(SI/NO)");
              //aceptar palabras en mayuscula o minuscula
              String tieneL = leer.next().toLowerCase();
+             //condicional
+             if (tieneL.equals("si")){
+                 System.out.println("------¡PUEDES CONDUCIR!-----");
+             }else {
+                 System.out.println("----¡NO PUEDES CONDUCIR!----");
+                 System.out.println("=====RENUEVA TU LICENCIA====");
+             }
+         }else {
+                 System.out.println("----¡NO PUEDES CONDUCIR!----");
+                 System.out.println("=====ERES MENOR DE EDAD=====");
          }
         
     }
