@@ -23,7 +23,7 @@ public class Algoritmo6 {
                     System.out.println("Lleva el paraguas contigo");
                     break;
                 case "no":
-                    System.out.println("No es necesario");
+                    System.out.println("Necesitas uno");
                     break;
                 default:
                     System.out.println("RESPUESTA NO VÁLIDA");
